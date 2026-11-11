@@ -1,0 +1,170 @@
+[
+  {
+    "date": "2026-07-30",
+    "scope": "recovery",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Manual recovery added for interrupted single projects and series episodes with resume-cache and restart actions"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "single",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Single workflow was renamed in visible UI to Video don and the redundant copy-all-prompts action was removed"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "series",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Series output consolidated to a single prompt-pack JSON copy action with prompt_0 and scene prompt/voice fields only"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "series",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Series brief stage simplified by removing visible brief suggestions and auto-applying the first generated brief"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "single",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Single production output embedded into phase 3 with compact scene navigator, prompt tabs, and legacy generate alias"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "info",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Intro, guide, and disclaimer aligned with the redesigned single, series, and unified history workflows"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "settings",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Settings defaults simplified by removing default duration from the visible control surface"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "settings",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Settings dashboard and model selector polished with token panels, key status cards, and compact quota dropdown"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "series",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Series output header now anchors on episode title with a shorter scene navigator"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "series",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Episode workbench split into brief-first and output stages with compact scene navigator and full-width artifacts"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "series",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Series intake with blank sidebar entry, no left rail, locked episode timeline, and inline output artifact tabs"
+  },
+  {
+    "date": "2026-07-30",
+    "scope": "single",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Single polish with explicit custom style choice, compact header, balanced intake/config row, and wide recent history"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "single",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Single workflow restored to explicit three-phase intake, suggestion review, and detail handoff"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "single",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Single manual-idea workbench with hidden short-long routing and compact recent projects"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "home",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Home command hierarchy polish and network-quiet topic loading"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "home",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Compact Home hub without topic quick start, draft resume, or ready banner"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "home",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Home dashboard with key status, shortcuts, draft resume, and topic quick start"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "history",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Backend-unified archive with desktop pagination and mobile load-more"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "app",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Unified history tab for single and series flows"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "app",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Tabbed frontend shell foundation"
+  },
+  {
+    "date": "2026-07-29",
+    "scope": "app",
+    "macrostructure": "Workbench + Narrative Workflow",
+    "theme": "Cobalt-dark",
+    "enrichment": "none",
+    "brief": "Series frontend v2 dashboard"
+  }
+]

@@ -1,0 +1,281 @@
+BẢN KẾ HOẠCH SẢN XUẤT
+Mạch câu chuyện
+
+Một bộ lạc người tiền sử tiến vào vùng băng cấm để săn Voi Ma Mút Cổ Đại Khổng Lồ. Ban đầu họ tin rằng chỉ cần sức mạnh là đủ, nhưng nhanh chóng nhận ra con vật có trí thông minh vượt mong đợi. Hành trình chuyển từ săn đuổi sang đấu trí, buộc cả đội phải liên tục thích nghi trước những thất bại và hiểm họa của vùng đất băng giá, trước khi bước vào trận quyết chiến cuối cùng.
+
+Phân chia giai đoạn
+
+Giai đoạn 1 – Thiết lập thế giới (Cảnh 1–12)
+
+Giới thiệu bộ lạc, thủ lĩnh trẻ và truyền thuyết về voi ma mút cổ đại.
+Chuẩn bị vũ khí, thức ăn, nghi thức trước chuyến đi.
+Đặt mục tiêu và tiến vào vùng đất cấm.
+
+Giai đoạn 2 – Truy dấu (Cảnh 13–28)
+
+Phát hiện dấu chân khổng lồ.
+Vượt rừng tuyết, sông băng và hẻm núi.
+Chạm trán các sinh vật nguy hiểm.
+Lần đầu nhìn thấy voi ma mút từ xa.
+
+Giai đoạn 3 – Đối đầu đầu tiên (Cảnh 29–45)
+
+Đặt bẫy.
+Kế hoạch thất bại.
+Voi ma mút phản công.
+Đội săn phải rút lui và chịu tổn thất.
+
+Giai đoạn 4 – Thay đổi chiến thuật (Cảnh 46–60)
+
+Khám phá điểm yếu của địa hình.
+Chế tạo bẫy mới.
+Dẫn voi ma mút vào khu vực quyết chiến.
+Từng thành viên đảm nhận vai trò riêng.
+
+Giai đoạn 5 – Trận chiến cuối (Cảnh 61–72)
+
+Trận săn quy mô lớn.
+Kết hợp bẫy, lửa và địa hình.
+Thủ lĩnh trực tiếp đối đầu.
+Hạ gục voi ma mút bằng chiến thuật thay vì sức mạnh.
+
+Giai đoạn 6 – Kết thúc (Cảnh 73–75)
+
+Bộ lạc trở về.
+Lễ ăn mừng.
+Hé lộ dấu chân của một sinh vật còn lớn hơn, mở ra phần tiếp theo.
+Tiến trình cảnh
+Mỗi cảnh chỉ có một mục tiêu rõ ràng.
+Mỗi sự kiện đều tạo hệ quả dẫn sang cảnh kế tiếp.
+Không lặp lại hành động hoặc góc máy.
+Nhịp phim tăng dần, cao trào liên tục từ giữa video đến cuối.
+Chiến lược Camera
+Fly-over toàn cảnh để giới thiệu thế giới.
+Wide cinematic cho các cảnh di chuyển.
+Tracking theo đội săn.
+Handheld nhẹ trong các pha hỗn loạn.
+Low-angle để nhấn mạnh kích thước voi ma mút.
+Close-up cảm xúc trước quyết định quan trọng.
+Orbit và crane shot trong trận chiến cuối.
+Slow motion chỉ dùng ở các khoảnh khắc then chốt.
+Continuity Locks
+Một bộ lạc duy nhất xuyên suốt.
+Thủ lĩnh trẻ luôn là nhân vật trung tâm.
+Thiết kế voi ma mút giữ nguyên từ đầu đến cuối.
+Trang phục bằng da thú, lông thú và dây da.
+Công cụ chỉ gồm đá, gỗ, xương, dây leo và lửa.
+Thời tiết duy trì mùa đông băng giá, chỉ thay đổi theo địa hình.
+Hard Visual / Form Locks
+Phong cách điện ảnh fantasy tiền sử.
+Không xuất hiện vật dụng hiện đại.
+Không có phép thuật hoặc công nghệ.
+Màu sắc chủ đạo: trắng băng, xanh lạnh, nâu da thú, cam của lửa.
+Quy mô môi trường và sinh vật luôn mang cảm giác khổng lồ.
+Age-Stage Locks
+Thủ lĩnh trẻ: khoảng 20–25 tuổi.
+Thành viên đội săn: trưởng thành, khỏe mạnh.
+Voi ma mút: cá thể trưởng thành cực lớn.
+Không thay đổi tuổi hoặc ngoại hình giữa các cảnh.
+Main Location / Habitat Geometry
+Làng người tiền sử.
+Rừng thông phủ tuyết.
+Đồng bằng băng.
+Hồ đóng băng.
+Hẻm núi đá.
+Hang băng.
+Thung lũng quyết chiến.
+
+Mỗi địa điểm được giới thiệu một lần và tái sử dụng hợp lý để giữ continuity.
+
+Risk Logic
+Mọi thất bại đều có nguyên nhân rõ ràng.
+Địa hình nguy hiểm hơn chính đối thủ ở nhiều thời điểm.
+Voi ma mút học hỏi sau mỗi lần chạm trán.
+Bộ lạc phải điều chỉnh chiến thuật liên tục.
+Chiến thắng cuối đến từ phối hợp đồng đội và tận dụng môi trường.
+Voice / Sound Strategy
+English narration ngắn, mạnh, giàu nhịp điệu điện ảnh.
+Không thoại dài giữa nhân vật.
+Âm thanh chủ đạo:
+Gió băng.
+Tiếng bước chân trên tuyết.
+Tiếng gầm của voi ma mút.
+Đá va chạm.
+Tiếng giáo phóng.
+Lửa cháy.
+Tiếng hò của bộ lạc.
+Nhạc nền tăng dần cường độ theo từng giai đoạn, đạt đỉnh ở trận chiến cuối.
+
+Gõ “tiếp tục” để nhận Prompt 0.
+
+
+
+
+Prompt 0
+Identity / Species Lock
+Primary Subject: Young prehistoric tribe led by one young chief (20–25 years old), supported by 8–10 experienced hunters.
+Primary Creature: One Ancient Giant Woolly Mammoth, several times larger than a normal mammoth, with massive curved ivory tusks, dark brown fur covered in frost, scarred hide, intelligent eyes, and slow but unstoppable movement.
+The mammoth's appearance, scale, scars, fur pattern, tusk shape, and proportions must remain identical throughout every scene.
+Hard Visual / Form Lock
+Cinematic prehistoric fantasy.
+No modern clothing, tools, buildings, metals, vehicles, or technology.
+Weapons are limited to stone spears, wooden clubs, bone knives, rope traps, logs, fire torches, and primitive tools.
+Heavy fur clothing made from animal hides.
+Realistic dirt, snow, mud, frost, smoke, scratches, and weathering.
+Epic scale environments with towering cliffs, frozen forests, glaciers, caves, and icy valleys.
+Fantasy exists only through oversized wildlife and dramatic environments—no magic, glowing powers, or supernatural effects.
+Setting / Habitat / World Lock
+Endless frozen wilderness during late Ice Age.
+Permanent winter atmosphere.
+Main locations:
+Tribal village.
+Frozen pine forest.
+Ice river.
+Snow plains.
+Rocky canyon.
+Frozen cave.
+Final hunting valley.
+Every location must preserve geography and continuity when revisited.
+Character Lock
+Young Chief
+Athletic build.
+Long dark hair tied with leather.
+Fur cloak made from mammoth hide.
+Stone spear with bone decorations.
+Calm leader, strategic thinker, courageous.
+Hunters
+Primitive fur clothing.
+Stone weapons only.
+Different body sizes but consistent appearance.
+Always operate as a coordinated hunting team.
+Mammoth
+Massive ancient alpha.
+Moves with heavy realistic weight.
+Extremely intelligent.
+Learns from failed traps.
+Never behaves like a monster; acts like a dominant wild animal defending its territory.
+Camera Lock
+Cinematic movie language.
+Wide establishing shots.
+Low-angle shots emphasizing mammoth scale.
+Tracking shots during hunting.
+Handheld intensity during danger.
+Drone-like aerial flyovers.
+Close-up only for emotional decisions.
+Slow motion reserved for decisive moments only.
+Voice / Sound Lock
+Narration language: English only.
+Narration must be concise, dramatic, and cinematic.
+Characters communicate mostly through gestures, brief shouts, and primitive calls.
+Environmental audio:
+Arctic wind.
+Snow footsteps.
+Mammoth roars.
+Ice cracking.
+Fire.
+Stone impacts.
+Heavy breathing.
+Primitive drums during major moments.
+Action / Story Logic
+
+The story follows a continuous escalation:
+
+Preparation.
+Expedition.
+Discovery.
+First encounter.
+Failure.
+Adaptation.
+New strategy.
+Final hunt.
+Victory.
+Consequence and future mystery.
+
+Every scene must introduce new information or consequences. No repeated actions without meaningful progression.
+
+Scene Function Rules
+
+Each 8-second scene must have exactly one dominant purpose:
+
+World building.
+Character development.
+Discovery.
+Conflict.
+Strategy.
+Chase.
+Trap.
+Survival.
+Emotional beat.
+Resolution.
+
+Never combine multiple major events into one scene.
+
+Continuity Lock
+Snow conditions evolve naturally but remain winter.
+Injuries persist until healed.
+Weapons remain consistent unless broken or replaced on-screen.
+Fire sources stay logically connected.
+Tracks, damaged terrain, and broken traps remain visible in later scenes.
+The mammoth remembers previous encounters and changes its behavior accordingly.
+Internal Logic
+No impossible physics.
+No teleportation.
+Every action has visible consequences.
+Every failed strategy influences future decisions.
+Teamwork wins over brute force.
+Environmental hazards are as dangerous as the mammoth itself.
+Negative Constraints
+No modern objects.
+No futuristic elements.
+No magical powers.
+No dinosaurs.
+No changing character designs.
+No random new creatures without narrative purpose.
+No comedic slapstick that breaks immersion.
+No inconsistent weather or geography.
+No narration outside English.
+
+Gõ “tiếp tục” để nhận các cảnh đầu tiên.
+
+
+
+
+scene 1: Reference the approved Prompt 0 continuity board, establish the frozen prehistoric fantasy world at sunrise with an immense snow-covered valley surrounded by towering glaciers and ancient pine forests, distant tribal village emitting thin smoke, ultra-wide cinematic aerial flyover, maintain identical Ice Age environment and geography continuity, no modern objects or fantasy magic, voice: "In the age of endless winter, survival belonged to the fearless."
+
+scene 2: Reference the approved Prompt 0 continuity board, introduce the young tribal chief standing before the village overlooking the frozen wilderness while gripping his stone spear, slow cinematic push-in from behind, preserve leader appearance and fur clothing continuity, no modern accessories, voice: "One hunter carried the fate of his people."
+
+scene 3: Reference the approved Prompt 0 continuity board, reveal villagers preparing supplies with stone spears, ropes, torches, and bone tools around roaring campfires, wide tracking shot weaving through the camp, preserve primitive technology and village layout continuity, no metal equipment, voice: "Every journey demanded sacrifice before it began."
+
+scene 4: Reference the approved Prompt 0 continuity board, elders gather around a massive mammoth tusk relic carved with ancient hunting marks as the chief listens silently, medium circular orbit shot emphasizing ritual significance, preserve tribal culture continuity, no supernatural effects, voice: "Ancient warnings echoed through every generation."
+
+scene 5: Reference the approved Prompt 0 continuity board, hunters apply charcoal war paint and tighten fur armor before departure while snow blows across the camp, alternating close-ups of determined faces, maintain consistent costumes and facial features, no modern makeup or fabrics, voice: "Courage was their only shield."
+
+scene 6: Reference the approved Prompt 0 continuity board, the hunting party leaves the village crossing a frozen river beneath dramatic morning light, long tracking shot following footprints in fresh snow, preserve team formation and environment continuity, no disappearing tracks, voice: "They marched toward a legend few had survived."
+
+scene 7: Reference the approved Prompt 0 continuity board, the team enters a towering pine forest where massive frozen trees block the sunlight and silence dominates, low-angle tracking between tree trunks, maintain permanent winter atmosphere, no tropical vegetation, voice: "The forest guarded ancient secrets."
+
+scene 8: Reference the approved Prompt 0 continuity board, one hunter discovers an enormous fresh footprint pressed deep into the snow, close-up transitioning to a wide reaction shot, preserve footprint scale consistent with the giant mammoth, no exaggerated magical glow, voice: "The giant was closer than anyone imagined."
+
+scene 9: Reference the approved Prompt 0 continuity board, the chief kneels beside the footprint measuring it with his stone spear while the team studies broken ice and crushed trees, overhead cinematic crane shot, maintain intelligent tracking behavior and terrain continuity, no impossible evidence, voice: "Every mark revealed a brilliant opponent."
+
+scene 10: Reference the approved Prompt 0 continuity board, far across the frozen valley the Ancient Giant Woolly Mammoth briefly appears through blowing snow before disappearing behind icy cliffs, extreme telephoto cinematic reveal emphasizing colossal scale, preserve mammoth design exactly as defined in Prompt 0 with frost-covered fur and massive curved tusks, no magical abilities or design changes, voice: "The hunt had finally begun."
+
+scene 11: Reference the approved Prompt 0 continuity board, the hunters silently descend into a narrow frozen ravine following the mammoth's trail as fresh snow begins to fall, long tracking shot from behind showing disciplined formation, preserve footprints and terrain continuity from the previous scene, no modern climbing gear, voice: "Every step carried them deeper into the giant's realm."
+
+scene 12: Reference the approved Prompt 0 continuity board, the chief notices shattered pine trunks freshly snapped at enormous height, low-angle camera revealing the immense force required, preserve mammoth strength and environmental continuity, no supernatural destruction, voice: "Only unimaginable power could leave scars like these."
+
+scene 13: Reference the approved Prompt 0 continuity board, one hunter discovers warm steam rising from a fresh footprint while everyone immediately takes defensive positions, close-up of melting snow transitioning into a wide formation shot, maintain footprint scale and winter realism, no glowing effects, voice: "The beast had passed only moments before."
+
+scene 14: Reference the approved Prompt 0 continuity board, the team crosses a fragile frozen lake with careful synchronized movements as deep cracks spread beneath the ice, overhead crane shot emphasizing danger, preserve geography and weather continuity, no impossible balance or physics, voice: "Nature tested them before the hunt ever began."
+
+scene 15: Reference the approved Prompt 0 continuity board, a distant thunderous roar shakes the valley and sends flocks of prehistoric birds into the sky, ultra-wide cinematic shot capturing the frozen landscape reacting, maintain mammoth position off-screen, no dinosaurs, voice: "Its voice ruled the frozen wilderness."
+
+scene 16: Reference the approved Prompt 0 continuity board, the hunters quickly hide among giant snow-covered boulders while scanning the valley ahead, handheld camera creating tension from behind the rocks, preserve team count and equipment continuity, no disappearing characters, voice: "Patience became their greatest weapon."
+
+scene 17: Reference the approved Prompt 0 continuity board, the Ancient Giant Woolly Mammoth slowly emerges through swirling snow crossing the valley with majestic weight, extreme low-angle cinematic reveal emphasizing colossal legs and frost-covered fur, preserve exact mammoth appearance defined in Prompt 0, no magical aura, voice: "The ancient titan revealed itself."
+
+scene 18: Reference the approved Prompt 0 continuity board, the mammoth pauses and raises its trunk to smell the air while carefully scanning the landscape, medium telephoto shot highlighting intelligence rather than aggression, preserve animal behavior continuity, no monster-like expressions, voice: "It sensed more than danger."
+
+scene 19: Reference the approved Prompt 0 continuity board, the chief quietly signals the team to avoid immediate attack and instead follow at a safe distance across the snowy ridge, wide tracking shot showing strategic discipline, preserve hunter formation and terrain continuity, no reckless charge, voice: "Victory would demand wisdom before courage."
+
+scene 20: Reference the approved Prompt 0 continuity board, the mammoth disappears into a massive icy canyon while the hunters watch from the cliff above and begin planning their first trap, cinematic aerial pullback revealing the enormous battlefield ahead, preserve canyon geography and environmental continuity for future scenes, no modern structures or fantasy magic, voice: "The first true challenge awaited beyond the ice."

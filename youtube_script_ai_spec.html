@@ -1,0 +1,385 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); color: var(--color-text-primary); }
+.wrap { padding: 0 0 2rem; }
+.tabs { display: flex; gap: 6px; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 1.5rem; padding-bottom: 0; }
+.tab { padding: 8px 16px; font-size: 13px; border: none; background: none; cursor: pointer; color: var(--color-text-secondary); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; font-family: var(--font-sans); border-radius: var(--border-radius-md) var(--border-radius-md) 0 0; }
+.tab:hover { color: var(--color-text-primary); background: var(--color-background-secondary); }
+.tab.active { color: var(--color-text-primary); border-bottom-color: var(--color-text-primary); font-weight: 500; }
+.panel { display: none; } .panel.active { display: block; }
+
+/* Cards */
+.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; }
+.card-header { font-size: 14px; font-weight: 500; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.card p, .card li { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; }
+.card ul { padding-left: 1rem; }
+.card li { margin-bottom: 4px; }
+
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 500; }
+.b-red { background: var(--color-background-danger); color: var(--color-text-danger); }
+.b-amber { background: var(--color-background-warning); color: var(--color-text-warning); }
+.b-green { background: var(--color-background-success); color: var(--color-text-success); }
+.b-info { background: var(--color-background-info); color: var(--color-text-info); }
+.b-gray { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+
+/* Grid */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+/* Table */
+.spec-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.spec-table th { text-align: left; padding: 8px 10px; font-size: 11px; font-weight: 500; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); text-transform: uppercase; letter-spacing: .04em; }
+.spec-table td { padding: 10px; border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: top; color: var(--color-text-secondary); line-height: 1.5; }
+.spec-table tr:last-child td { border-bottom: none; }
+.spec-table td:first-child { font-weight: 500; color: var(--color-text-primary); white-space: nowrap; }
+
+/* Timeline */
+.tl { position: relative; padding-left: 24px; }
+.tl::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 0.5px; background: var(--color-border-secondary); }
+.tl-item { position: relative; margin-bottom: 20px; }
+.tl-item::before { content: ''; position: absolute; left: -20px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-background-primary); border: 2px solid var(--color-border-primary); }
+.tl-item.done::before { background: var(--color-background-success); border-color: var(--color-text-success); }
+.tl-title { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+.tl-sub { font-size: 12px; color: var(--color-text-secondary); line-height: 1.55; }
+
+/* Flow */
+.flow { display: flex; align-items: center; gap: 0; flex-wrap: wrap; }
+.flow-box { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 8px 12px; font-size: 12px; font-weight: 500; text-align: center; min-width: 90px; }
+.flow-box.highlight { background: var(--color-background-info); border-color: var(--color-border-info); color: var(--color-text-info); }
+.flow-arr { color: var(--color-text-secondary); font-size: 14px; padding: 0 6px; }
+.section-title { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; color: var(--color-text-secondary); margin-bottom: 10px; }
+
+/* Risk */
+.risk-row { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.risk-row:last-child { border: none; }
+</style>
+
+<div class="wrap">
+<div class="tabs" id="tabs">
+  <button class="tab active" onclick="switchTab('overview')">Tổng quan</button>
+  <button class="tab" onclick="switchTab('features')">Chức năng</button>
+  <button class="tab" onclick="switchTab('tech')">Công nghệ</button>
+  <button class="tab" onclick="switchTab('flow')">Luồng dữ liệu</button>
+  <button class="tab" onclick="switchTab('timeline')">Lộ trình</button>
+  <button class="tab" onclick="switchTab('risks')">Rủi ro</button>
+</div>
+
+<!-- TAB 1: OVERVIEW -->
+<div class="panel active" id="panel-overview">
+  <div class="section-title">Mô tả sản phẩm</div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-header"><i class="ti ti-robot" aria-hidden="true"></i> YouTube Script AI Generator</div>
+    <p>Công cụ web hỗ trợ creator Việt Nam tạo kịch bản YouTube từ các video nguồn tiếng nước ngoài (trọng tâm: kênh lịch sử/tiền sử châu Âu). Người dùng nhập URL video → AI tự động trích xuất nội dung, phân tích cấu trúc, và sinh ra kịch bản song ngữ Anh–Việt bám sát video gốc.</p>
+  </div>
+
+  <div class="section-title">Đối tượng người dùng</div>
+  <div class="grid2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="card-header"><i class="ti ti-user" aria-hidden="true"></i> Creator YouTube</div>
+      <p>Muốn làm video về lịch sử/tiền sử châu Âu theo phong cách các kênh lớn nhưng bằng tiếng Việt</p>
+    </div>
+    <div class="card">
+      <div class="card-header"><i class="ti ti-pencil" aria-hidden="true"></i> Biên kịch</div>
+      <p>Cần công cụ tham khảo cấu trúc kịch bản từ video nước ngoài để phóng tác hoặc Việt hóa</p>
+    </div>
+  </div>
+
+  <div class="section-title">Mục tiêu Phase 1 (MVP)</div>
+  <div class="card">
+    <ul>
+      <li>Nhập YouTube URL → tự động lấy transcript</li>
+      <li>Gemini API phân tích transcript → tóm tắt cấu trúc video</li>
+      <li>Sinh kịch bản bám sát gốc bằng <strong>2 ngôn ngữ song song</strong> (EN gốc + VI dịch)</li>
+      <li>Giao diện web sạch, có thể copy kịch bản</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Ngoài phạm vi Phase 1</div>
+  <div class="card">
+    <ul>
+      <li>Kịch bản sáng tạo / Gợi ý video tiếp theo (Phase 2)</li>
+      <li>Đăng nhập / lưu lịch sử (Phase 3)</li>
+      <li>Export PDF/DOCX (Phase 3)</li>
+      <li>NotebookLM integration — <em>không khả thi, dùng Gemini thay thế</em></li>
+    </ul>
+  </div>
+</div>
+
+<!-- TAB 2: FEATURES -->
+<div class="panel" id="panel-features">
+  <div class="section-title">Danh sách chức năng theo mức độ ưu tiên</div>
+  <div class="card" style="padding: 0; overflow: hidden;">
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Chức năng</th>
+          <th>Mô tả</th>
+          <th>Ưu tiên</th>
+          <th>Phase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>F01</td><td>Nhập YouTube URL</td><td>Input field nhận URL, validate định dạng youtube.com / youtu.be</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F02</td><td>Fetch transcript tự động</td><td>Gọi YouTube Transcript API / youtube-transcript-api, fallback sang Whisper nếu không có caption</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F03</td><td>Paste transcript thủ công</td><td>Textarea nhập text thủ công khi không lấy được tự động</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F04</td><td>Gemini phân tích cấu trúc</td><td>Gửi transcript → nhận outline: intro, các phần chính, outro, tone, hook</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F05</td><td>Sinh kịch bản tiếng Anh</td><td>Kịch bản bám sát cấu trúc video gốc, giữ nguyên thông tin</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F06</td><td>Sinh kịch bản tiếng Việt</td><td>Dịch + Việt hóa kịch bản EN, giữ tone phù hợp audience Việt</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F07</td><td>Hiển thị song ngữ EN/VI</td><td>2 cột hoặc tab toggle, có nút copy từng phần</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F08</td><td>Nhập Gemini API Key</td><td>Input an toàn trong app, lưu vào localStorage (không gửi lên server)</td><td><span class="badge b-red">Core</span></td><td>1</td></tr>
+        <tr><td>F09</td><td>Loading state & error handling</td><td>Spinner, thông báo lỗi rõ ràng (video private, không có transcript…)</td><td><span class="badge b-amber">Important</span></td><td>1</td></tr>
+        <tr><td>F10</td><td>Kịch bản sáng tạo</td><td>Biến thể kịch bản với góc nhìn mới, ngôn ngữ hấp dẫn hơn</td><td><span class="badge b-amber">Important</span></td><td>2</td></tr>
+        <tr><td>F11</td><td>Gợi ý ý tưởng video tiếp theo</td><td>3–5 ý tưởng video liên quan dựa trên nội dung đã phân tích</td><td><span class="badge b-amber">Important</span></td><td>2</td></tr>
+        <tr><td>F12</td><td>Lưu lịch sử kịch bản</td><td>localStorage lưu 10 kịch bản gần nhất</td><td><span class="badge b-green">Nice</span></td><td>3</td></tr>
+        <tr><td>F13</td><td>Export kịch bản</td><td>Tải về .txt / .md</td><td><span class="badge b-green">Nice</span></td><td>3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:16px" class="section-title">Prompt engineering — điểm quan trọng nhất</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-header"><i class="ti ti-analyze" aria-hidden="true"></i> Prompt phân tích cấu trúc</div>
+      <p>Yêu cầu Gemini trả về JSON: hook, act 1-3, outro, tone (dramatic/educational…), độ dài từng phần</p>
+    </div>
+    <div class="card">
+      <div class="card-header"><i class="ti ti-script" aria-hidden="true"></i> Prompt sinh kịch bản</div>
+      <p>Cung cấp outline + toàn bộ transcript, yêu cầu kịch bản theo đúng cấu trúc, có stage direction, dạng voiceover</p>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 3: TECH -->
+<div class="panel" id="panel-tech">
+  <div class="section-title">Stack công nghệ đề xuất</div>
+  <div class="grid2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="card-header" style="color:var(--color-text-info)"><i class="ti ti-layout" aria-hidden="true"></i> Frontend</div>
+      <table class="spec-table">
+        <tr><td>Framework</td><td>React + Vite</td></tr>
+        <tr><td>Styling</td><td>Tailwind CSS</td></tr>
+        <tr><td>State</td><td>useState / useReducer</td></tr>
+        <tr><td>Deploy</td><td>Vercel (free tier)</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-header" style="color:var(--color-text-success)"><i class="ti ti-server" aria-hidden="true"></i> Backend</div>
+      <table class="spec-table">
+        <tr><td>Framework</td><td>Python + FastAPI</td></tr>
+        <tr><td>Transcript</td><td>youtube-transcript-api</td></tr>
+        <tr><td>AI</td><td>google-generativeai (Gemini)</td></tr>
+        <tr><td>Deploy</td><td>Railway / Render (free)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-title">APIs & thư viện chính</div>
+  <div class="card">
+    <table class="spec-table">
+      <thead><tr><th>Thư viện / API</th><th>Mục đích</th><th>Chi phí</th><th>Ghi chú</th></tr></thead>
+      <tbody>
+        <tr><td>Gemini 1.5 Flash</td><td>Phân tích + sinh kịch bản</td><td>Miễn phí (có giới hạn)</td><td>15 RPM / 1M TPM free</td></tr>
+        <tr><td>youtube-transcript-api</td><td>Lấy phụ đề YouTube</td><td>Miễn phí</td><td>Python, không cần API key</td></tr>
+        <tr><td>YouTube Data API v3</td><td>Lấy metadata video</td><td>Miễn phí (10k req/ngày)</td><td>Tên video, duration…</td></tr>
+        <tr><td>OpenAI Whisper (fallback)</td><td>Transcribe khi không có phụ đề</td><td>$0.006/phút</td><td>Phase 2, optional</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title">Lưu ý về bảo mật API Key</div>
+  <div class="card">
+    <ul>
+      <li>Gemini API Key do người dùng tự nhập — lưu localStorage trình duyệt, <strong>không gửi lên server</strong></li>
+      <li>Mọi request Gemini đi trực tiếp từ backend (FastAPI) — frontend không bao giờ expose key</li>
+      <li>Backend nhận key từ header Authorization mỗi request, không lưu lại</li>
+    </ul>
+  </div>
+</div>
+
+<!-- TAB 4: FLOW -->
+<div class="panel" id="panel-flow">
+  <div class="section-title">Luồng xử lý chính — Happy Path</div>
+  <div class="card" style="margin-bottom:16px">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="flow-box highlight">1. Người dùng nhập URL</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box">Validate URL YouTube</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box highlight">2. Fetch transcript</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;padding-left:40px">
+        <div class="flow-box">youtube-transcript-api</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box">Có transcript?</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;padding-left:80px">
+        <span style="font-size:12px;color:var(--color-text-secondary)">✓ Có →</span>
+        <div class="flow-box">Raw transcript text</div>
+        <div class="flow-arr"></div>
+        <span style="font-size:12px;color:var(--color-text-secondary);padding-left:16px">✗ Không → Yêu cầu paste thủ công</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="flow-arr" style="padding:0"></div>
+        <div class="flow-box highlight">3. Gemini phân tích</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box">Outline JSON: hook, parts, tone</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box highlight">4. Sinh kịch bản</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="flow-arr" style="padding:0"></div>
+        <div class="flow-box highlight">5. Hiển thị song ngữ</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box">EN | VI tab/2 cột</div>
+        <div class="flow-arr">→</div>
+        <div class="flow-box">Copy / Export</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Cấu trúc dữ liệu Gemini trả về (Phase 1)</div>
+  <div class="card">
+    <pre style="font-size:12px;font-family:var(--font-mono);color:var(--color-text-secondary);white-space:pre-wrap;line-height:1.6">{
+  "video_summary": "...",
+  "tone": "dramatic | educational | storytelling",
+  "structure": [
+    { "part": "Hook",      "duration_sec": 30,  "key_points": ["..."] },
+    { "part": "Act 1",     "duration_sec": 120, "key_points": ["..."] },
+    { "part": "Act 2",     "duration_sec": 180, "key_points": ["..."] },
+    { "part": "Conclusion","duration_sec": 60,  "key_points": ["..."] }
+  ],
+  "script_en": "Full script in English...",
+  "script_vi": "Kịch bản tiếng Việt đầy đủ..."
+}</pre>
+  </div>
+
+  <div class="section-title">Giới hạn kỹ thuật cần xử lý</div>
+  <div class="card">
+    <table class="spec-table">
+      <thead><tr><th>Vấn đề</th><th>Giải pháp</th></tr></thead>
+      <tbody>
+        <tr><td>Video không có phụ đề tự động</td><td>Thông báo rõ ràng + fallback paste thủ công</td></tr>
+        <tr><td>Transcript quá dài (>30 phút)</td><td>Chunking: chia transcript 3–4 đoạn, gửi Gemini từng đoạn, ghép kết quả</td></tr>
+        <tr><td>Gemini rate limit (15 RPM free)</td><td>Queue request, hiển thị loading rõ ràng, retry sau 5s</td></tr>
+        <tr><td>CORS khi gọi YouTube từ browser</td><td>Mọi request YouTube đi qua FastAPI backend, không gọi trực tiếp từ frontend</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TAB 5: TIMELINE -->
+<div class="panel" id="panel-timeline">
+  <div class="section-title">Lộ trình triển khai chi tiết</div>
+  <div class="grid3" style="margin-bottom:16px">
+    <div class="card" style="border-color:var(--color-border-danger)">
+      <div class="card-header"><span class="badge b-red">Phase 1</span></div>
+      <p style="font-size:12px;font-weight:500;margin-bottom:4px">MVP — Bản làm việc được</p>
+      <p>Thời gian: 5–7 ngày</p>
+    </div>
+    <div class="card" style="border-color:var(--color-border-warning)">
+      <div class="card-header"><span class="badge b-amber">Phase 2</span></div>
+      <p style="font-size:12px;font-weight:500;margin-bottom:4px">Sáng tạo & Gợi ý</p>
+      <p>Thời gian: +3–5 ngày</p>
+    </div>
+    <div class="card" style="border-color:var(--color-border-success)">
+      <div class="card-header"><span class="badge b-green">Phase 3</span></div>
+      <p style="font-size:12px;font-weight:500;margin-bottom:4px">Polish & Export</p>
+      <p>Thời gian: +3–4 ngày</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-title">Ngày 1 — Setup & UI cơ bản <span class="badge b-red" style="margin-left:6px">Hôm nay</span></div>
+        <div class="tl-sub">• Khởi tạo React + Vite + Tailwind<br>• Giao diện nhập URL + Gemini API Key<br>• FastAPI scaffold cơ bản<br>• Tích hợp Gemini API đơn giản (test với text input)</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">Ngày 2 — Transcript pipeline</div>
+        <div class="tl-sub">• Tích hợp youtube-transcript-api trong FastAPI<br>• Xử lý các trường hợp: video private, không có phụ đề<br>• Fallback textarea nhập thủ công<br>• Test với 5–10 video thật</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">Ngày 3 — Prompt Engineering</div>
+        <div class="tl-sub">• Tinh chỉnh prompt phân tích cấu trúc<br>• Prompt sinh kịch bản EN bám sát video<br>• Prompt dịch + Việt hóa<br>• Test với video kênh tiền sử châu Âu (Toldinstone, Fall of Civilizations…)</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">Ngày 4–5 — Output UI + Polish Phase 1</div>
+        <div class="tl-sub">• Giao diện hiển thị kịch bản song ngữ 2 cột<br>• Copy từng phần / copy toàn bộ<br>• Loading state, error handling<br>• Deploy: Vercel + Railway/Render</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">Ngày 6–8 — Phase 2: Sáng tạo & Gợi ý</div>
+        <div class="tl-sub">• Kịch bản biến thể sáng tạo hơn<br>• 3–5 gợi ý ý tưởng video tiếp theo<br>• UI tab switching giữa kịch bản gốc / sáng tạo</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">Ngày 9–12 — Phase 3: Hoàn thiện</div>
+        <div class="tl-sub">• Lưu lịch sử kịch bản (localStorage)<br>• Export .txt / .md<br>• Chunking xử lý video dài<br>• UX refinement</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 6: RISKS -->
+<div class="panel" id="panel-risks">
+  <div class="section-title">Phân tích rủi ro & giải pháp</div>
+  <div class="card">
+    <div class="risk-row">
+      <span class="badge b-red" style="min-width:56px;text-align:center">Cao</span>
+      <div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:3px">YouTube chặn lấy transcript</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">Một số video disable phụ đề tự động, video private/age-restricted không lấy được<br><strong>Giải pháp:</strong> Cung cấp textarea fallback nhập thủ công; hiển thị hướng dẫn lấy transcript từ YouTube Studio</div>
+      </div>
+    </div>
+    <div class="risk-row">
+      <span class="badge b-red" style="min-width:56px;text-align:center">Cao</span>
+      <div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:3px">Transcript quá dài vượt context Gemini</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">Video 30–60 phút có transcript 8–15k tokens, vượt giới hạn free tier<br><strong>Giải pháp:</strong> Dùng Gemini 1.5 Flash (1M token context), chunking nếu cần; hiển thị warning video quá dài</div>
+      </div>
+    </div>
+    <div class="risk-row">
+      <span class="badge b-amber" style="min-width:56px;text-align:center">Trung</span>
+      <div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:3px">Chất lượng kịch bản phụ thuộc vào prompt</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">Kịch bản có thể quá generic hoặc không bắt được tone video gốc<br><strong>Giải pháp:</strong> Dành ngày 3 chỉ để test & tinh chỉnh prompt, có ít nhất 10 test case thật</div>
+      </div>
+    </div>
+    <div class="risk-row">
+      <span class="badge b-amber" style="min-width:56px;text-align:center">Trung</span>
+      <div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:3px">Bản dịch tiếng Việt không tự nhiên</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">Gemini dịch máy có thể cứng nhắc, không phù hợp với phong cách YouTube Việt<br><strong>Giải pháp:</strong> Prompt yêu cầu "Việt hóa" không chỉ dịch, thêm option chỉnh sửa thủ công trong UI</div>
+      </div>
+    </div>
+    <div class="risk-row">
+      <span class="badge b-green" style="min-width:56px;text-align:center">Thấp</span>
+      <div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:3px">Gemini API rate limit</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">Free tier: 15 requests/phút — với use case cá nhân không thành vấn đề<br><strong>Giải pháp:</strong> Thêm retry logic + loading indicator; hướng dẫn upgrade nếu cần</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:16px" class="section-title">Câu hỏi cần xác nhận trước khi code</div>
+  <div class="card">
+    <ul>
+      <li style="margin-bottom:8px"><strong>Kênh cụ thể nào?</strong> — Fall of Civilizations, Toldinstone, Historigraph…? Để test prompt cho đúng tone</li>
+      <li style="margin-bottom:8px"><strong>Độ dài video trung bình?</strong> — 10 phút hay 60 phút? Ảnh hưởng đến chunking strategy</li>
+      <li style="margin-bottom:8px"><strong>App dùng một mình hay chia sẻ?</strong> — Nếu nhiều người dùng cần backend riêng, không để API Key phía client</li>
+      <li><strong>Tên / brand của tool?</strong> — Để thiết kế UI phù hợp</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<script>
+function switchTab(id) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
